@@ -12,6 +12,11 @@ type Pdf struct {
 	mock.Mock
 }
 
+// SetUnderlineThickness provides a mock with given fields: thickness
+func (_m *Pdf) SetUnderlineThickness(thickness float64) {
+	_m.Called(thickness)
+}
+
 // AddFont provides a mock function with given fields: familyStr, styleStr, fileStr
 func (_m *Pdf) AddFont(familyStr string, styleStr string, fileStr string) {
 	_m.Called(familyStr, styleStr, fileStr)
